@@ -6,9 +6,9 @@ The cauldron document contains:
 
 The cauldron document is actually a single JSON document: `cauldron.json`.
 
-In order to use a MiniApp in any mobile application, first you'll need to add the MiniApp in the cauldron associated to that mobile application. Before adding a MiniApp to a Cauldron, Electrode Native performs compatibility checks to confirm that the MiniApp version (to be added to the target mobile application version) contains only native dependencies that are supported and that the versions are properly aligned with the mobile application version.
+In order to use a MiniApp in any mobile application, first you'll need to add the MiniApp to the cauldron associated with that mobile application. Before adding a MiniApp to the Cauldron, Electrode Native performs compatibility checks to confirm that the MiniApp version (to be added to the target mobile application version) contains only the native dependencies that are supported and that the versions are properly aligned with the mobile application version.
 
-If compatibility checks pass, a new container version is generated and published. The new container is updated with the changes and the mobile application version data stored in the Cauldron is updated accordingly to reflect the current new state of the new container version. This occurs when the mobile application version is not released yet (in-development). If some dependencies versions are not compatible, a new container won't be created. Similar checks happen for pushing a MiniApp update as an Over-the-Air (OTA) update.
+If compatibility checks pass, a new container version is generated and published. The new container is updated with the changes and the mobile application version data stored in the Cauldron is updated accordingly, to reflect the current new state of the new container version. This occurs when the mobile application version is not released yet (in-development). If some dependencies versions are not compatible, a new container won't be created. Similar checks happen for pushing a MiniApp update as an Over-the-Air (OTA) update.
 
 The cauldron stores `yarn.lock` files that are used internally to guarantee consistency of non-updated MiniApp versions.
 
